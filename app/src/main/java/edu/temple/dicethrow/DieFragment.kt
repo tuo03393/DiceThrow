@@ -72,13 +72,11 @@ class DieFragment : Fragment() {
     }
 
     //Added companion ojbect. Teachers says that the code he suggested feels incorrect.
-   /* companion object {
-        fun newInstance (sides: Int) = DieFragment()
-            .arguments?.apply {
-                Bundle().apply{
-                    putInt(DIESIDE, sides)
-                }
+   companion object {
+        fun newInstance(sides: Int) = DieFragment().apply {
+            arguments = Bundle().apply {
+                putInt(DIESIDE, sides)
             }
-    } */
-
+        }
+    }
 }
